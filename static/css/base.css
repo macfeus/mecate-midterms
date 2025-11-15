@@ -1,0 +1,48 @@
+.navbar {
+    background-color: #1e1e1e;        /* dark background */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;          /* center the links horizontally */
+    align-items: center;
+    gap: 40px;                        /* space between links */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #4ac1f7;                   /* light blue text */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: pink;
+    transform: scale(1.1);            /* slightly grow on hover */
+}
+
+/* === ACTIVE LINK (optional highlight for current page) === */
+.navbar a.active {
+    border-bottom: 2px solid #4ac1f7;
+    padding-bottom: 3px;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+}
+
+h1 {
+    color: #4ac1f7;
+}
+
+.mylogo {
+    height: 1000px;
+    width: auto;
+}
